@@ -1,0 +1,41 @@
+@import 'color';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1260px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+
+// ==== margin and padding
+
+@for $i from 1 through 10{
+    .pt-#{$i *10}{
+        padding-top: $i * 10;
+    }
+    .pb-#{$i *10}{
+        padding-bottom: $i * 10;
+    }
+}
+
+$list: left, center, right, justify;
+@each $i in $list{
+    .text-#{$i}{
+        text-align: $i;
+    }
+}
