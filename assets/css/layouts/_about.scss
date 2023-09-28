@@ -1,0 +1,16 @@
+.about {
+    .single-about-content {
+        padding: 40px 20px;
+        border: 1px solid #ddd;
+        p{
+            margin: 20px 8px;
+        }
+        a{
+            color: $secondary-color;
+            border-color: $secondary-color;
+            &:hover{
+                border-color: $primary-color;
+            }
+        }
+    }
+}

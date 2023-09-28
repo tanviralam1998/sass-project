@@ -1,0 +1,20 @@
+.services-area{
+    background-color: #F2F2F2;
+    .single-services-content{
+        background-color: $white;
+        padding: 60px 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+        transition: .3s;
+        h3{
+            font-weight: 600;
+        }
+        p{
+            padding: 20px 0;
+        }
+        &:hover{
+            border-color: $primary-color;
+        }
+        
+    }
+}

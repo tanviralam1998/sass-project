@@ -1,0 +1,37 @@
+@import '../base/color';
+header{
+    padding: 30px 0;
+    .header-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo{
+            a{
+                color: $secondary-color;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: 700;
+                transition: .3s;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        .menu{
+            ul{
+                li {
+                    display: inline-block;
+                    a {
+                        margin: 8px 16px;
+                        color: $secondary-color;
+                        text-transform: uppercase;
+                        transition: .3s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
