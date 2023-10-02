@@ -1,0 +1,31 @@
+.portfolio{
+    .single-portfolio{
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        transition: .3s;
+        
+            h3{
+                // visibility: hidden;
+                display: none;
+                
+            }
+            &:hover h3{
+                // visibility: visible;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                color: $white;
+                opacity: .75;
+                text-align: center;
+                align-items: center;
+                text-transform: capitalize;
+                background-color: $secondary-color; 
+        }
+    }
+}

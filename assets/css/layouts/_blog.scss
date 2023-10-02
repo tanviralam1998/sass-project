@@ -1,0 +1,29 @@
+.blog{
+    .single-blog{
+        background-color: #dfdfdf;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        &:hover{
+            .blog-img{
+                transform: scale(1.1);
+            }
+        }
+        .blog-img{
+            background-position: center;
+            background-size: cover;
+            height: 250px;
+            transition: .3s;
+        }
+        .blog-content{
+            padding: 20px;
+            h4 {
+                padding: 10px 0;
+                font-size: 20px;
+                text-transform: capitalize;
+            }
+            p {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

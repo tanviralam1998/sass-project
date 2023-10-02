@@ -47,7 +47,9 @@ ul{
         z-index: -2;
     }
 }
-
+.white-text{
+    color: $white;
+}
 // button css
 .btn{
     text-transform: capitalize;
@@ -80,9 +82,21 @@ ul{
         }
     }
 }
+input, textarea{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 // section title
