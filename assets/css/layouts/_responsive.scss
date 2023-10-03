@@ -1,0 +1,166 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px !important;
+    }
+
+    .grid {
+        gap: 20px;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .header-wrap {
+        display: block !important;
+        text-align: center;
+
+        .logo {
+            a {
+                font-size: 16px !important;
+            }
+        }
+
+        .menu {
+            margin-top: 20px;
+
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                        margin: 8px 8px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-content {
+        margin-top: 100px;
+
+        p {
+            padding: 20px 0;
+        }
+    }
+
+    .about {
+        .single-about-content {
+            padding: 24px 5px;
+        }
+    }
+
+    .services {
+        .single-services-content {
+            padding: 10px;
+            margin: 5px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+        }
+    }
+
+    .portfolio .single-portfolio {
+        height: auto;
+    }
+
+    .contact-bottom {
+        .map iframe {
+            width: 100% !important;
+
+        }
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 300px;
+    }
+
+    .grid,
+    .grid2 {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    a.btn {
+        margin-bottom: 16px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .header-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+        .logo {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .menu {
+            width: 100%;
+
+            ul {
+                text-align: center;
+
+                li {
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    .banner-content h2,
+    .cta-area h2 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .portfolio .single-portfolio {
+        height: auto;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 450px;
+    }
+}
+
+$i: 5;
+
+@while $i < 50 {
+    .pt {
+        padding: 20px
+    }
+
+    $i: $i+1;
+}

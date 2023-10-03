@@ -89,6 +89,24 @@ input, textarea{
     margin-bottom: 15px;
     background-color: #fff;
 }
+.scroll-top i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ff7720;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+    & a:hover{
+        background-color: $secondary-color;
+        
+    }
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

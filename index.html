@@ -11,28 +11,31 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-wrap container">
-            <!-- logo -->
-            <div class="logo">
-                <a href="#">project with sass</a>
-            </div>
-            <!-- header menu -->
-            <div class="menu">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
+    <header class="header-area">
+        <div class="container">
+            <div class="header-wrap">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="#">project with sass</a>
+                </div>
+                <!-- header menu -->
+                <div class="menu">
+                    <ul id="nav">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#project">project</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#contact">contact us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    
     </header>
 
     <!-- baner area section -->
-    <section class="banner-area bg pt-100 pb-100" style="background-image: url(assets/img/banner.jpg);">
+    <section class="banner-area bg pt-100 pb-100" id="home" style="background-image: url(assets/img/banner.jpg);">
         <div class="container">
             <div class="banner-content">
                 <h2>Welcome to our World!</h2>
@@ -43,9 +46,8 @@
             </div>
         </div>
     </section>
-
     <!-- about area section -->
-    <section class="about-area pt-100 pb-100">
+    <section class="about-area pt-100 pb-100" id="about">
         <div class="container">
             <div class="section-title text-center">
                 <h2>About Us</h2>
@@ -76,7 +78,7 @@
         </div>
     </section>
     <!-- services area section -->
-    <section class="services-area pt-100 pb-50">
+    <section class="services-area pt-100 pb-50" id="services">
         <div class="container">
             <div class="section-title text-center">
                 <h2>our services</h2>
@@ -125,7 +127,7 @@
         </div>
     </section>
     <!-- portfolio-area section -->
-    <section class="portfolio-area pt-100 pb-50">
+    <section class="portfolio-area pt-100 pb-50" id="project">
         <div class="container">
             <div class="section-title text-center">
                 <h2>latest portfolio</h2>
@@ -189,7 +191,6 @@
             </div>
         </div>
     </section>
-
     <!-- cta area section  -->
     <section class="cta-area bg pt-70 pb-70 text-center white-text"
         style="background-image: url(assets/img/banner.jpg);">
@@ -202,7 +203,7 @@
         </div>
     </section>
     <!--blog-area section -->
-    <section class="blog-area pt-100 pb-50">
+    <section class="blog-area pt-100 pb-50" id="blog">
         <div class="container">
             <div class="section-title text-center">
                 <h2>Exclusive Blogs</h2>
@@ -242,10 +243,8 @@
             </div>
         </div>
     </section>
-
-
     <!-- contact-area section -->
-    <section class="contact-area pt-100 pb-50">
+    <section class="contact-area pt-100 pb-50" id="contact">
         <div class="container">
             <div class="section-title text-center">
                 <h2>contact us</h2>
@@ -290,9 +289,14 @@
             </div>
         </div>
     </section>
-
+    <!-- FOOTER AREA -->
+    <footer class="footer-area">
+        <p>&copy; 2023 All Right Reserved.</p>
+    </footer>
+    <a href="javascript:void(0)" id="return" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/magnific-min.js"></script>
+    <script src="assets/js/one-page.nav.js"></script>
     <script src="assets/js/myScript.js"></script>
 </body>
 </html>
